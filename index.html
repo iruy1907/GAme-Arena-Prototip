@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameArenaBiblioteca</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Atalho</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Biblioteca Geral</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Minha Biblioteca</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="file:///C:/Users/CLIENTE/Desktop/phalanx/Game%20Arena%202.html" class="lista-menu__link">Plano Assinatura </a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="file:///C:/Users/CLIENTE/Desktop/phalanx/tela%20login2.html" class="lista-menu__link">Desconectar</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="file:///C:/Users/CLIENTE/Desktop/phalanx/tela%20login2.html" class="lista-menu__link">Adicionar Conta</a>
+        </li>
+      </ul>
+      <img src="img/Inkedimages_LI (2).jpg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/favoritos2.jpg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/default.jpg" alt="Carrinhos de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Avatar.jpg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Ja sabe qual jogo procura?</h2>
+    <p class="banner__texto">Encontre-o em nossa pesquisa rápida na biblioteca</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual jogo procura?" >
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Jogos Conteudo Pago</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/MGRR.webp"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img src="img/sotc.webp"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img src="img/BO6.webp" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide"><img src="img/BlackOps.jpg">
+        </div>
+        <div class="swiper-slide"><img src="img/Wukong.png">
+          </div>
+        <div class="swiper-slide">
+          <img src="img/MK.jpg" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/RE4remake.webp" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/GOD.jpg" alt="Livro sobre acessibilidade" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/uncharted_4_box.webp" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/MidnightClub.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/BlueLock.png" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/capitanTsubasa.jpg" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/DragonBallSZ.webp" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/Naruto.jpg" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Jogos em conjunto?</h2>
+          <p class="descrição__texto">
+            Construindo uma aplicação integrada com a plataforma do Google.
+          </p>
+        </div>
+        <img src="img/Collections.jpg" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/favoritos2.jpg" alt="Favoritar Modo Collections" />
+          </li>
+          <li class="botões__item">
+            <img src="img/default.jpg" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Modo Collections</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Jogos Conteudo Gratuito</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="img/Warzone.jpg"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+            <div class="swiper-slide">
+              <a href="https://scratch.mit.edu/projects/1021283961/"><img src="img/pong1.jpg"></a>
+            </div>
+        <div class="swiper-slide"><img src="img/warframe.jpg" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide">
+          <a href="https://scratch.mit.edu/projects/849815827/"><img src="img/DragonRun.png"></a>
+        </div>
+        <div class="swiper-slide"><img src="img/overwatch.jpg" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img src="img/Valorant.jpg" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img src="img/RocketLeague.jpg" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide">
+          <a href="https://scratch.mit.edu/projects/863866709/"><img src="img/unicorniorun.jpg"></a>
+        </div>
+        <div class="swiper-slide"><img src="img/tfd.webp" alt="livro sobre acessibilidade"></div>
+        <div class="swiper-slide"><img src="img/fallguys.jpg" ></div>
+        <div class="swiper-slide"><img src="img/GOTL.jpg" ></div>
+        <div class="swiper-slide"><img src="img/tetris.webp" ></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Jogo do Mês:</h3>
+          <h2 class="descrição__titulo-livro">Black Myth: Wukong</h2>
+          <p class="descrição__texto">é um RPG de ação inspirado na mitologia da China e baseado em "Jornada para o Oeste", um dos quatro grandes romances clássicos da literatura chinesa.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/Wukong.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/favoritos2.jpg" alt="Favoritar livro"></li>
+          <li class="botões__item"><img src="img/default.jpg" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo"> Recentemente Acessados</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="file:///C:/Users/CLIENTE/Desktop/phalanx/Game%20Arena%202.html" class="tópicos__link">Assinatura</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Biblioteca Paga</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Biblioteca Gratuita</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jogos de luta</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Jogos de Quebra-Cabeça</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Mundo Aberto</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Arcade</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de lançamentos e atualizações 
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Yoichi Nagi</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
